@@ -19,50 +19,50 @@
 .inner .hero-card {
   padding: 24px 0 0;
   position: relative;
+  overflow: hidden;
 }
 
 .inner .hero-card .hero-grid {
   width: min(1180px, calc(100% - 48px));
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
+  grid-template-columns: 460px 1fr;
   align-items: center;
-  gap: 32px;
+  gap: 36px;
   position: relative;
 }
 
 .inner .hero-card .hero-grid > div:first-child {
+  max-width: 460px;
   padding-bottom: 44px;
   z-index: 2;
 }
 
 .inner .hero-art {
   position: relative;
-  width: calc(100% + 60px);
-  margin-right: -60px;
-  height: 100%;
-  min-height: 440px;
+  width: calc(100% + max(0px, (100vw - 1180px) / 2));
+  margin-right: calc(-1 * max(0px, (100vw - 1180px) / 2));
   display: flex;
   align-items: flex-end;
-  justify-content: center;
+  justify-content: flex-end;
   overflow: visible;
   z-index: 1;
 }
 
 .inner .hero-art-img {
   width: 100%;
-  height: 100%;
+  height: auto;
   max-height: 520px;
-  min-height: 440px;
+  min-height: 380px;
   object-fit: cover;
-  object-position: center bottom;
+  object-position: right bottom;
   border-radius: 0 !important;
   box-shadow: none !important;
   border: none !important;
   background: transparent;
   display: block;
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 4%, #000 96%, transparent 100%);
-  mask-image: linear-gradient(to right, transparent 0%, #000 4%, #000 96%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.4) 4%, #000 12%, #000 92%, rgba(0, 0, 0, 0.4) 98%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.4) 4%, #000 12%, #000 92%, rgba(0, 0, 0, 0.4) 98%, transparent 100%);
 }
 
 .inner .hero-art .img-box {
@@ -1227,15 +1227,17 @@
   .inner .hero-art {
     width: 100%;
     margin-right: 0;
-    min-height: 260px;
-    height: 280px;
-    max-height: 320px;
+    min-height: 220px;
+    height: auto;
+    max-height: 340px;
   }
 
   .inner .hero-art-img {
-    min-height: 260px;
-    height: 280px;
-    max-height: 320px;
+    width: 100%;
+    height: auto;
+    min-height: 220px;
+    max-height: 340px;
+    object-fit: cover;
     -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 3%, #000 97%, transparent 100%);
     mask-image: linear-gradient(to right, transparent 0%, #000 3%, #000 97%, transparent 100%);
   }

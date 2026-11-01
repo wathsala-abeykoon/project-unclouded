@@ -47,6 +47,8 @@
   justify-content: flex-end;
   overflow: visible;
   z-index: 1;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.4) 3%, #000 12%);
+  mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.4) 3%, #000 12%);
 }
 
 .inner .hero-art-img {
@@ -1230,6 +1232,8 @@
     min-height: 220px;
     height: auto;
     max-height: 340px;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.4) 3%, #000 10%);
+    mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.4) 3%, #000 10%);
   }
 
   .inner .hero-art-img {

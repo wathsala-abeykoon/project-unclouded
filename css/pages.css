@@ -991,6 +991,10 @@
   line-height: 1.5;
 }
 
+.inner .toolkit-table td::before {
+  display: none;
+}
+
 .inner .toolkit-table tr:last-child td {
   border-bottom: none;
 }

@@ -633,6 +633,11 @@
   overflow: hidden;
 }
 
+.home .std-table td::before,
+.home .standards-table td::before {
+  display: none;
+}
+
 .home .std-table table {
   font-size: 14px;
 }
@@ -800,18 +805,11 @@
 }
 
 @media (max-width: 1100px) {
-  .home .why-row,
   .home .case-panel,
   .home .feature-2x2,
   .home .overview-grid,
-  .home .why-cards,
   .home .cta-inner {
     grid-template-columns: 1fr;
-  }
-
-  .home .why-row h2,
-  .home .why-row .muted {
-    max-width: 100%;
   }
 
   .home .nav-pages {
@@ -1016,6 +1014,7 @@
     padding-bottom: 0;
   }
 
+  .home .std-table td::before,
   .home .standards-table td::before {
     content: attr(data-label);
     display: block;

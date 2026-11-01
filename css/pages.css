@@ -1070,11 +1070,15 @@
 }
 
 .inner .res-link-btn:hover {
-  background: #0c3b34;
-  color: #fff;
-  border-color: #0c3b34;
+  background: #0c3b34 !important;
+  color: #ffffff !important;
+  border-color: #0c3b34 !important;
   transform: translateY(-1px);
-  box-shadow: 0 3px 8px rgba(12, 59, 52, 0.12);
+  box-shadow: 0 4px 12px rgba(12, 59, 52, 0.18);
+}
+
+.inner .res-link-btn:hover iconify-icon {
+  color: #ffffff !important;
 }
 
 .inner .res-link-btn iconify-icon {
@@ -1085,6 +1089,12 @@
   background: #eef5f2;
 }
 
+.inner .res-link-btn.res-pdf:hover {
+  background: #0c3b34 !important;
+  color: #ffffff !important;
+  border-color: #0c3b34 !important;
+}
+
 .inner .res-link-btn.res-ppt {
   background: #fdf5ea;
   border-color: #f1ddbf;
@@ -1092,9 +1102,9 @@
 }
 
 .inner .res-link-btn.res-ppt:hover {
-  background: #8c520a;
-  color: #fff;
-  border-color: #8c520a;
+  background: #8c520a !important;
+  color: #ffffff !important;
+  border-color: #8c520a !important;
 }
 
 .inner .res-link-btn.res-doc {
@@ -1104,9 +1114,9 @@
 }
 
 .inner .res-link-btn.res-doc:hover {
-  background: #174b6f;
-  color: #fff;
-  border-color: #174b6f;
+  background: #174b6f !important;
+  color: #ffffff !important;
+  border-color: #174b6f !important;
 }
 
 .inner .res-link-btn.res-lang {
@@ -1116,9 +1126,9 @@
 }
 
 .inner .res-link-btn.res-lang:hover {
-  background: #5d257a;
-  color: #fff;
-  border-color: #5d257a;
+  background: #5d257a !important;
+  color: #ffffff !important;
+  border-color: #5d257a !important;
 }
 
 .inner .res-link-btn.res-form {
@@ -1128,9 +1138,9 @@
 }
 
 .inner .res-link-btn.res-form:hover {
-  background: #0c5931;
-  color: #fff;
-  border-color: #0c5931;
+  background: #0c5931 !important;
+  color: #ffffff !important;
+  border-color: #0c5931 !important;
 }
 
 .inner .res-form-badge {

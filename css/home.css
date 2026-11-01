@@ -68,17 +68,24 @@
   background: transparent;
   color: #fff;
   border-radius: 0;
-  padding: 36px 0 56px;
-  overflow: hidden;
+  padding: 24px 0 0;
+  overflow: visible;
+  position: relative;
 }
 
 .home .hero-card .hero-grid {
-  width: min(1180px, calc(100% - 48px));
+  width: min(1320px, calc(100% - 48px));
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  align-items: stretch;
-  gap: 36px;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: 32px;
+  position: relative;
+}
+
+.home .hero-card .hero-grid > div:first-child {
+  padding-bottom: 44px;
+  z-index: 2;
 }
 
 .home .hero-badge {
@@ -145,21 +152,34 @@
 }
 
 .home .hero-art {
+  position: relative;
   width: 100%;
-  min-width: 0;
   height: 100%;
+  min-height: 480px;
   display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: visible;
+  z-index: 1;
+  -webkit-mask-image: linear-gradient(to bottom, #000 84%, transparent 100%);
+  mask-image: linear-gradient(to bottom, #000 84%, transparent 100%);
 }
 
 .home .hero-art img,
 .home .hero-art .hero-art-img {
   width: 100%;
   height: 100%;
-  min-height: 400px;
+  max-height: 540px;
+  min-height: 460px;
   object-fit: cover;
-  border-radius: 28px;
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
+  object-position: center bottom;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  border: none !important;
+  background: transparent;
   display: block;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.35) 6%, #000 18%, #000 82%, rgba(0, 0, 0, 0.35) 94%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.35) 6%, #000 18%, #000 82%, rgba(0, 0, 0, 0.35) 94%, transparent 100%);
 }
 
 .home .overlap {
@@ -847,12 +867,16 @@
   }
 
   .home .hero-card {
-    padding: 28px 0 48px;
+    padding: 20px 0 32px;
   }
 
   .home .hero-card .hero-grid {
     grid-template-columns: 1fr;
-    gap: 28px;
+    gap: 20px;
+  }
+
+  .home .hero-card .hero-grid > div:first-child {
+    padding-bottom: 0;
   }
 
   .home .hero-card h1 {
@@ -861,12 +885,18 @@
 
   .home .hero-art {
     min-width: 0;
+    min-height: 260px;
+    height: 280px;
+    max-height: 320px;
   }
 
   .home .hero-art img,
   .home .hero-art .hero-art-img {
-    min-height: 240px;
-    height: 260px;
+    min-height: 260px;
+    height: 280px;
+    max-height: 320px;
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.4) 4%, #000 12%, #000 88%, rgba(0, 0, 0, 0.4) 96%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.4) 4%, #000 12%, #000 88%, rgba(0, 0, 0, 0.4) 96%, transparent 100%);
   }
 }
 

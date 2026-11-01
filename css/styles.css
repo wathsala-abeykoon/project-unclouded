@@ -382,8 +382,7 @@ a {
 }
 
 .hero-art {
-  justify-self: end;
-  width: min(420px, 100%);
+  width: 100%;
 }
 
 .img-box {

@@ -1160,32 +1160,119 @@
 }
 
 @media (max-width: 820px) {
+  .inner .voice-top {
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+
+  .inner .voice-top h2 {
+    max-width: 100%;
+    font-size: clamp(24px, 5.5vw, 32px);
+    line-height: 1.25;
+  }
+
+  .inner .voice-lead {
+    padding-top: 0;
+    margin-top: 10px;
+    font-size: 14.5px;
+    line-height: 1.6;
+  }
+
+  .inner .toolkit-table-wrap {
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    overflow: visible;
+    margin-top: 20px;
+  }
+
   .inner .toolkit-table thead {
     display: none;
   }
+
   .inner .toolkit-table,
   .inner .toolkit-table tbody,
   .inner .toolkit-table tr,
   .inner .toolkit-table td {
     display: block;
     width: 100%;
+    box-sizing: border-box;
   }
+
   .inner .toolkit-table tr {
-    padding: 16px 0;
-    border-bottom: 2px solid #e7efe9;
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px 18px;
+    margin-bottom: 18px;
+    border: 1px solid #e1ebe5;
+    box-shadow: 0 4px 18px rgba(12, 59, 52, 0.05);
   }
+
+  .inner .toolkit-table tr:hover {
+    background: #fff;
+  }
+
   .inner .toolkit-table td {
-    padding: 8px 16px;
-    border-bottom: none;
+    padding: 10px 0;
+    border-bottom: 1px solid #edf3f0;
   }
+
+  .inner .toolkit-table td:first-child {
+    padding-top: 0;
+  }
+
+  .inner .toolkit-table td:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
   .inner .toolkit-table td::before {
     content: attr(data-label);
     display: block;
     font-size: 11px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #556b64;
+    letter-spacing: 0.06em;
+    color: #1a7a4c;
     margin-bottom: 6px;
+  }
+
+  .inner .asset-title {
+    font-size: 16px;
+    line-height: 1.35;
+  }
+
+  .inner .res-btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .inner .res-link-btn {
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    white-space: normal;
+    text-align: left;
+    padding: 11px 14px;
+    font-size: 13px;
+    line-height: 1.35;
+    word-break: break-word;
+    border-radius: 12px;
+  }
+
+  .inner .res-link-btn iconify-icon {
+    flex-shrink: 0;
+    font-size: 16px;
+  }
+
+  .inner .res-form-list {
+    width: 100%;
+  }
+
+  .inner .res-form-list .res-link-btn {
+    width: 100%;
   }
 }
 

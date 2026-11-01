@@ -14,5 +14,5 @@ $RECYCLE.BIN/
 *.sublime-workspace
 
 # Local documentation & raw images
-#Docs & SS/
+*Docs*
 *.tmp

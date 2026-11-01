@@ -12,3 +12,7 @@ $RECYCLE.BIN/
 .idea/
 *.sublime-project
 *.sublime-workspace
+
+# Local documentation & raw images
+#Docs & SS/
+*.tmp

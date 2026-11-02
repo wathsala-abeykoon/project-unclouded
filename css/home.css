@@ -2472,3 +2472,12 @@
   .home.inner .hero-card .hero-grid > div:first-child { max-width: 580px; }
   .home.inner .hero-card h1 { max-width: 20ch; }
 }
+
+/* Inner-page hero: image sits flush with the bottom edge, no gap below */
+@media (min-width: 1101px) {
+  .home.inner .hero-card { padding-bottom: 0; }
+  .home.inner .hero-card .hero-grid { align-items: end; }
+  .home.inner .hero-card .hero-grid > div:first-child { align-self: center; }
+  .home.inner .hero-art { align-self: end; align-items: flex-end; margin-bottom: 0; }
+  .home.inner .hero-art .hero-art-img { display: block; vertical-align: bottom; object-position: left bottom; }
+}

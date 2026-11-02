@@ -2507,3 +2507,6 @@
 }
 
 .inner #governance .mtss-intro h2 { max-width: none; }
+
+.inner .ai-head h2 { font-size: clamp(24px, 3vw, 32px); color: #0c3b34; max-width: none; }
+.inner #governance .mtss-intro { margin-bottom: 18px; }

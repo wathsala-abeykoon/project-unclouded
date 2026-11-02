@@ -2481,3 +2481,29 @@
   .home.inner .hero-art { align-self: end; align-items: flex-end; margin-bottom: 0; }
   .home.inner .hero-art .hero-art-img { display: block; vertical-align: bottom; object-position: left bottom; }
 }
+
+/* AI declaration */
+.inner .ai-decl {
+  margin-top: 20px;
+  background: #fbf3d9;
+  border: 1px solid #e8d48a;
+  border-left: 6px solid #e8c14a;
+  border-radius: 22px;
+  padding: 30px 32px;
+}
+
+.inner .ai-head { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
+.inner .ai-head h3 { font-size: 22px; color: #0c3b34; }
+.inner .ai-decl p { font-size: 15px; line-height: 1.8; color: #3e524c; max-width: 900px; }
+.inner .ai-decl p + p, .inner .ai-decl ul + p { margin-top: 14px; }
+.inner .ai-decl .ai-sub { margin-top: 14px; font-weight: 700; color: #0c3b34; }
+.inner .ai-decl ul { list-style: none; display: grid; gap: 10px; margin: 10px 0 0; max-width: 900px; }
+.inner .ai-decl li { position: relative; padding-left: 18px; font-size: 15px; line-height: 1.7; color: #3e524c; }
+.inner .ai-decl li::before { content: ""; position: absolute; left: 0; top: 11px; width: 6px; height: 6px; border-radius: 50%; background: #1a7a4c; }
+.inner .ai-decl a { color: #146a43; font-weight: 600; text-decoration: underline; text-underline-offset: 2px; }
+
+@media (max-width: 600px) {
+  .inner .ai-decl { padding: 22px 20px; }
+}
+
+.inner #governance .mtss-intro h2 { max-width: none; }

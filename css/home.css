@@ -2510,3 +2510,10 @@
 
 .inner .ai-head h2 { font-size: clamp(24px, 3vw, 32px); color: #0c3b34; max-width: none; }
 .inner #governance .mtss-intro { margin-bottom: 18px; }
+
+/* Video thumbnail is a link to the video */
+.home .video-frame .video-cover { position: absolute; inset: 0; z-index: 1; cursor: pointer; }
+.home .video-frame a.play { text-decoration: none; transition: transform 0.15s ease; }
+.home .video-frame:hover a.play { transform: scale(1.08); }
+
+.home .video-frame .video-overlay { pointer-events: none; }
